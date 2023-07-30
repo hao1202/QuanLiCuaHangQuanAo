@@ -10,5 +10,5 @@ package model;
  * @author tranv
  */
 public class User {
-    
+    private String id;
 }
