@@ -50,6 +50,12 @@ public class DBContext {
     }
 
     public static void main(String[] args) {
-        System.out.println("test");
+        Connection connection = getConnection();
+        if (connection != null) {
+            System.out.println("thanh cong");
+        } else {
+            System.out.println("That bai");
+        }
+        closeConnection(connection);
     }
 }
